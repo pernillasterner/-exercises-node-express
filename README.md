@@ -1,2 +1,18 @@
-# -exercises-node-express
-Fundamentals of Node and Express. 
+# Node and Express Excercises
+
+#### Contents
+
+1. Node Tutorial
+2. Express Tutorial
+3. Task Manager (MongoDB, Mongoose)
+4. Store API
+5. JWT Basics
+6. Jobs API
+
+#### Course Exclusive
+
+7. File Upload (local and cloudinary)
+8. Send Email (nodemailer,ethereal and sendgrid )
+9. Stripe Payment
+10. E-Commerce API
+11. Auth Workflow (verify email, reset password)
