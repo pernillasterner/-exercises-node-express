@@ -1,20 +1,27 @@
 // OS Module (operating system)
 // Setup
 //const { os } = require("os"); // destuct it
-const os = require("os");
+import {
+  userInfo,
+  uptime,
+  type,
+  release as _release,
+  totalmem,
+  freemem,
+} from "os";
 
 // info about current user
-const user = os.userInfo();
+const user = userInfo();
 console.log(user);
 
 // method returns the system uptime in seconds
-console.log(`THe System Uptime is ${os.uptime()} seconds`);
+console.log(`THe System Uptime is ${uptime()} seconds`);
 
 const currentOS = {
-  name: os.type(),
-  release: os.release(),
-  totalMem: os.totalmem(),
-  freeMem: os.freemem(),
+  name: type(),
+  release: _release(),
+  totalMem: totalmem(),
+  freeMem: freemem(),
 };
 // Info about the current operating system
 console.log(currentOS);
