@@ -1,13 +1,20 @@
-// ComonJS, every file is module (by default)
-// Modules - Encapsulated Code (Split my code in modules)
-// Smaller filer and more structure to the application
+// OS Module (operating system)
+// Setup
+//const { os } = require("os"); // destuct it
+const os = require("os");
 
-// Access names
-const names = require("./4-names.js");
-const sayHi = require("./5-utils");
-const data = require("./6-alternative-flavor.js");
-require("./7-mind-grenade.js");
+// info about current user
+const user = os.userInfo();
+console.log(user);
 
-// console.log(data);
-// sayHi(names.john);
-// sayHi(names.peter);
+// method returns the system uptime in seconds
+console.log(`THe System Uptime is ${os.uptime()} seconds`);
+
+const currentOS = {
+  name: os.type(),
+  release: os.release(),
+  totalMem: os.totalmem(),
+  freeMem: os.freemem(),
+};
+// Info about the current operating system
+console.log(currentOS);
