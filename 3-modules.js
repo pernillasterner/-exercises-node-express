@@ -5,6 +5,10 @@
 // Access names
 const names = require("./4-names.js");
 const sayHi = require("./5-utils");
+const data = require("./6-alternative-flavor.js");
+// When importing module you invoke the code
+require("./7-mind-grenade.js");
 
+// console.log(data);
 sayHi(names.john);
 sayHi(names.peter);
