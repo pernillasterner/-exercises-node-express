@@ -1,4 +1,5 @@
 import { readFile, writeFile } from "fs";
+console.log("start");
 
 /// Read the content from the first file
 readFile("./content/first.txt", "utf8", (err, result) => {
@@ -26,8 +27,10 @@ readFile("./content/first.txt", "utf8", (err, result) => {
           console.log(err);
           return;
         }
-        console.log(result);
+        console.log("done with this task");
       }
     );
   });
 });
+
+console.log("starting next task");
