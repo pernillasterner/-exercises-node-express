@@ -3,4 +3,4 @@ const sayHi = (name) => {
 };
 
 // To be able to share one value
-module.exports = sayHi;
+export default sayHi;

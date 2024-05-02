@@ -4,4 +4,5 @@ const secret = "SUPER SECRET";
 const john = "john";
 const peter = "peter";
 
-module.exports = { john, peter };
+// To be able to share these names
+export default { john, peter };
